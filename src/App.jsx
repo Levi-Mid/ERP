@@ -1,8 +1,12 @@
 import Home from "./pages/Home/Home"
+import Dash from "./pages/Dashboard/Dashboard"
+
 
 function App(){
   return(
-    <Home/>
+      <Dash/>
+
+    
   )
 }
 
