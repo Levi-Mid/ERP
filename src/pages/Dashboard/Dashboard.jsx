@@ -19,19 +19,20 @@ function Dashboard(){
             default: return <Inicio/>
         }
     }
-    
     const[activeItem, setActiveItem] = useState(1)
+
     return(
-        
-        <>
+   
         <div className="dashboard">
             <Sidebar activeItem={activeItem} setActiveItem={setActiveItem} />
             <main className ="content-area">
                 <Topbar/>
-                {renderContent()}
+                <div className="Content-body">
+                    {renderContent()}
+                </div>
             </main>
         </div>
-        </>
+       
     )
 }
 export default Dashboard

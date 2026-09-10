@@ -1,5 +1,10 @@
 .dashboard {
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    height: 97vh;
+    width: 97vw;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+    
 }
+
