@@ -5,8 +5,6 @@ import Dash from "./pages/Dashboard/Dashboard"
 function App(){
   return(
       <Dash/>
-
-    
   )
 }
 

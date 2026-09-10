@@ -6,9 +6,8 @@
     list-style: none;
     display:flex;
     flex-direction: column;
-    gap: 70px;
-    padding-left:20px;
-
+    gap: 30px;
+    
 }
 .btn-basic{
     text-align: left;
@@ -16,11 +15,9 @@
     color:#FFFFFF;
     font-size: 20px;
     width: 100%;
-
 }
 
 .btn-basic:hover{
-
     cursor: pointer;
     background-color: #FFFFFF;
     color: #6C4AB6;
@@ -31,11 +28,14 @@
 }
 .sidebar{
     height: 100vh;
-    width: 15%;
+    width: 250px;
     background-color: #6C4AB6;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .logo{
-    margin:5px 30px 0 30px ;
-    width: 200px;
-    height: 200px;
+    margin: 30px 0 0 30px;
+    width: 170px;
+    height: 75px;
 }

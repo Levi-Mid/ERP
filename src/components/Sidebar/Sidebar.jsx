@@ -1,5 +1,6 @@
 import "./Sidebar.css";
 import logoImg from "../../img/mid.png"
+import adatina from "../../img/ada tina-.png"
 
 function Sidebar({ activeItem, setActiveItem }) {
 
@@ -12,7 +13,7 @@ function Sidebar({ activeItem, setActiveItem }) {
     return (
         <aside className="sidebar">
             <div className="logo-container">
-                <img src={logoImg} className="logo" alt="logo" />
+                <img src={adatina} className="logo" alt="logo" />
             </div>
             <ul className="nav-list">
                 {navItems.map(item => (
@@ -22,6 +23,9 @@ function Sidebar({ activeItem, setActiveItem }) {
                         </button>
                     </li>))}
             </ul>
+            <div>
+                <hr />
+            </div>
         </aside>
     )
 }
