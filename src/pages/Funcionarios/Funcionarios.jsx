@@ -22,10 +22,10 @@ function Funcionarios() {
 
 
     return (
-        <div className="allCards">
+        <div className="allCards-fun">
             {funcionarios.map(func => (
-                <div className="cards completos" key={func.id}>
-                    <p className="nome">{func.nome}</p>
+                <div className="cards-fun completos" key={func.id}>
+                    <h3 className="nome">{func.nome}</h3>
                     <p className="cargo">{func.cargo}</p>
                     <p className="tel">{func.telefone}</p>
                     <p className="email">{func.email}</p>

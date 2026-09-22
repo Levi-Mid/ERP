@@ -1,5 +1,38 @@
+:root {
+    --roxo-padrao: #6C4AB6;
+    --base-clara: #FFFFFF;
+    --cinza-claro: #e6e6e6;
+    --cor-pendente-borda: #C56A00;
+    --cor-pendente-fundo: rgba(197, 105, 0, 0.288);
+    --cor-completo-borda: #1E7A34;
+    --cor-completo-fundo: rgba(30, 122, 51, 0.329);
+    --laranja-claro: ;
+    --laranja-escuro: ;
+    --laranja-trans: ;
+    --verde-escuro: ;
+    --verde-claro: ;
+    --verde-trans: ;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #e6e6e6;
+    background-color: var(--cinza-claro);
+}
+.cards-fun{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;       
+    justify-content: center;
+}
+
+.allCards-fun{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.allCards-fun{
+    margin: 30px;
 }
