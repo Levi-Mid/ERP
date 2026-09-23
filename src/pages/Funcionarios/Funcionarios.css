@@ -1,5 +1,5 @@
 .completos{
     background-color: var(--cor-completo-fundo);
-    border: solid 3px var(--cor-completo-borda);
+    border: solid 2px var(--cor-completo-borda);
     border-radius: 20px;
 }

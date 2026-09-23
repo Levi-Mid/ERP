@@ -1,7 +1,9 @@
 import "./NovoColaborador.css"
-import { useState } from "react";
+import { useState } from "react"
 import { supabase } from "../../services/supabaseClient"
-import { useEffect } from "react";
+import { useEffect } from "react"
+import check from "../../img/verifica.png"
+import editar from "../../img/botao-editar.png"
 
 const colaboradorVazio = {
     nome: "",
@@ -68,6 +70,9 @@ function NovoColaborador() {
             setFunPendente(funPendentes.filter(pendente => pendente.id !== id))
         }
     }
+    async function editarCadastro(id){
+        
+    }
 
     return (
         <>
@@ -87,7 +92,10 @@ function NovoColaborador() {
                         <p className="cargo">{pendente.cargo}</p>
                         <p className="tel">{pendente.telefone}</p>
                         <p className="email">{pendente.email}</p>
-                        <button type="button" onClick={() => completarCadastro(pendente.id)}>Finalizar Cadastro</button>
+                        <div className="botoes-card"> 
+                            <button type="button editar" onClick={() => editarCadastro(pendente.id)}><img className="botao-editar" src={editar} alt="" /></button>
+                            <button type="button check" onClick={() => completarCadastro(pendente.id)}><img className="botao-check" src={check} alt="" /></button>
+                        </div>
                     </div>
                 ))}
             </div>

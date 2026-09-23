@@ -1,5 +1,16 @@
 .pendentes{
     background-color: var(--cor-pendente-fundo);
-    border: solid 3px var(--cor-pendente-borda);
+    border: solid 2px var(--cor-pendente-borda);
     border-radius: 20px;
+}
+.botao-check{
+    height: 20px;
+    width: 20px;
+}
+.botao-editar{
+    height: 20px;
+    width: 20px;
+}
+.botoes-card{
+    display: flex;
 }
