@@ -2,6 +2,7 @@
     --roxo-padrao: #6C4AB6;
     --base-clara: #FFFFFF;
     --cinza-claro: #e6e6e6;
+    --roxo-escuro: #5738A0;
     --cor-pendente-borda: #C56A00;
     --cor-pendente-fundo: rgba(197, 105, 0, 0.288);
     --cor-completo-borda: #1E7A34;
@@ -34,5 +35,26 @@ body {
     gap: 20px;
 }
 .allCards-fun{
-    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.cards-fun .nome{
+    font-size: 18px;
+    color: var(--roxo-padrao);
+    margin: 0 0 4px;
+}
+
+.cards-fun .cargo{
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin: 0 0 12px;
+}
+
+.cards-fun .tel,
+.cards-fun .email{
+    font-size: 13px;
+    color: #777;
+    margin: 2px 0;
 }

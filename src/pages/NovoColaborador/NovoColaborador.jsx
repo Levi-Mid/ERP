@@ -70,8 +70,8 @@ function NovoColaborador() {
             setFunPendente(funPendentes.filter(pendente => pendente.id !== id))
         }
     }
-    async function editarCadastro(id){
-        
+    async function editarCadastro(id) {
+
     }
 
     return (
@@ -92,9 +92,13 @@ function NovoColaborador() {
                         <p className="cargo">{pendente.cargo}</p>
                         <p className="tel">{pendente.telefone}</p>
                         <p className="email">{pendente.email}</p>
-                        <div className="botoes-card"> 
-                            <button type="button editar" onClick={() => editarCadastro(pendente.id)}><img className="botao-editar" src={editar} alt="" /></button>
-                            <button type="button check" onClick={() => completarCadastro(pendente.id)}><img className="botao-check" src={check} alt="" /></button>
+                        <div className="botoes-card">
+                            <button type="button" className="btn-icon btn-editar" onClick={() => editarCadastro(pendente.id)}>
+                                <img className="botao-editar" src={editar} alt="Editar" />
+                            </button>
+                            <button type="button" className="btn-icon btn-check" onClick={() => completarCadastro(pendente.id)}>
+                                <img className="botao-check" src={check} alt="Finalizar" />
+                            </button>
                         </div>
                     </div>
                 ))}

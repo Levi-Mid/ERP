@@ -27,7 +27,7 @@ function Dashboard(){
             <Sidebar activeItem={activeItem} setActiveItem={setActiveItem} />
             <main className ="content-area">
                 <Topbar/>
-                <div className="Content-body">
+                <div className="content-body">
                     {renderContent()}
                 </div>
             </main>
